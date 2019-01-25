@@ -1,0 +1,11 @@
+C:\Users\Lisandro\Desktop\PruebasC#\tateti\bin\Debug\netcoreapp2.1\tateti.deps.json
+C:\Users\Lisandro\Desktop\PruebasC#\tateti\bin\Debug\netcoreapp2.1\tateti.runtimeconfig.json
+C:\Users\Lisandro\Desktop\PruebasC#\tateti\bin\Debug\netcoreapp2.1\tateti.runtimeconfig.dev.json
+C:\Users\Lisandro\Desktop\PruebasC#\tateti\bin\Debug\netcoreapp2.1\tateti.dll
+C:\Users\Lisandro\Desktop\PruebasC#\tateti\bin\Debug\netcoreapp2.1\tateti.pdb
+C:\Users\Lisandro\Desktop\PruebasC#\tateti\obj\Debug\netcoreapp2.1\tateti.csprojAssemblyReference.cache
+C:\Users\Lisandro\Desktop\PruebasC#\tateti\obj\Debug\netcoreapp2.1\tateti.csproj.CoreCompileInputs.cache
+C:\Users\Lisandro\Desktop\PruebasC#\tateti\obj\Debug\netcoreapp2.1\tateti.AssemblyInfoInputs.cache
+C:\Users\Lisandro\Desktop\PruebasC#\tateti\obj\Debug\netcoreapp2.1\tateti.AssemblyInfo.cs
+C:\Users\Lisandro\Desktop\PruebasC#\tateti\obj\Debug\netcoreapp2.1\tateti.dll
+C:\Users\Lisandro\Desktop\PruebasC#\tateti\obj\Debug\netcoreapp2.1\tateti.pdb
