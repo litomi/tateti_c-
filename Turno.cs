@@ -12,8 +12,8 @@ namespace tateti
         }
 
         //Devuelve un jugador diferente para el siguiente turno
-        public static Jugador siguienteJugador(List<Jugador> jugadores, Jugador jugador){
-            return (jugadores[0] == jugador)? jugadores[1]:jugadores[0];
+        public static void cambiarTurno(List<Jugador> jugadores, ref Jugador jugador){
+            jugador = (jugadores[0] == jugador)? jugadores[1]:jugadores[0];
         }
     }
 }

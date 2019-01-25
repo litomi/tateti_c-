@@ -2,16 +2,17 @@ using System;
 namespace tateti
 {
     public class Jugador{
+        private static int contador = 1;
+
         public string Nombre { get; set; }
 
-        //Letra con la que juega
         public char Letra{ get; set;}
 
-        //Humano - Cpu
         public string Tipo{ get; set;}
 
-        public void nombramientoAuto(sbyte contador){
-            Nombre = string.Format("Jugador {0}({1})", contador, Tipo);
+        public void nombramientoAuto () {
+            Nombre = string.Format ("{0}_{1}", (Tipo == "Humano")?"Humano":"CPU", contador);
+            contador++;
         }
 
         public string mostrarDatos(){

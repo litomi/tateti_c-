@@ -33,9 +33,7 @@ namespace tateti {
             jugadorDeTurno = Turno.sorteaTurno (jugadores);
 
             //Se asigna letra a cada jugador
-            procesos.asignarLetraAjugador (jugadores, jugadorDeTurno);
-
-           
+            procesos.asignarLetraAjugador (jugadores, jugadorDeTurno);           
 
             //El bucle se quiebra si el tablero está lleno o si hay ganador.
             while (true) {
@@ -45,13 +43,11 @@ namespace tateti {
                 Tablero.dibujarTablero (tab);
 
                 if (Tablero.esGanador (tab, jugadorDeTurno.Letra)) {
-                    //Invocar ganador, mostrar datos y romper bucle.
                     Mensajes.Resultado.Ganador(jugadorDeTurno);
                     break;
                 } else {
                     if (!Tablero.tableroLleno (tab)) {
-                        //Cambia el turno
-                        jugadorDeTurno = Turno.siguienteJugador (jugadores, jugadorDeTurno);
+                        Turno.cambiarTurno (jugadores, ref jugadorDeTurno);
                     } else {
                         Mensajes.Resultado.Empate();
                         break;
