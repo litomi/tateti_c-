@@ -24,7 +24,7 @@ namespace tateti {
             sbyte jugada;
 
             Console.Write ("Ingrese jugada: ");
-            
+
             while (true) {
                 sbyte.TryParse (Console.ReadLine (), out jugada);
 
@@ -61,14 +61,12 @@ namespace tateti {
 
         }
 
-        //Selección de letra para jugador Cpu
         private void seleccionarLetraCPU (Jugador jugador) {
             Random random = new Random ();
             char[] letras = { 'X', 'O' };
             jugador.Letra = letras[random.Next (2)];
         }
 
-        //Selección de la letra para jugador Humano
         private void seleccionarLetraHumano (Jugador jugador) {
             char letra = ' ';
 
@@ -88,8 +86,7 @@ namespace tateti {
             }
         }
 
-        //Seleccionar tipo de juego
-        public sbyte seleccionarModalidad (List<Jugador> jugadores) {
+        public sbyte seleccionarModalidadJuego (List<Jugador> jugadores) {
             sbyte opc = 0;
 
             Mensajes.Modalidad.Menu ();

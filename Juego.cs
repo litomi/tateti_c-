@@ -21,13 +21,12 @@ namespace tateti {
 
             sbyte jugada;
 
-
             //Presentación
             Console.WriteLine (Mensajes.present);
             Tablero.dibujarTablero (Tablero.tab_coordenadas);
 
             //Seleccionar modalidad de juego
-            procesos.seleccionarModalidad (jugadores);
+            procesos.seleccionarModalidadJuego (jugadores);
 
             //Sortea turno 
             jugadorDeTurno = Turno.sorteaTurno (jugadores);
@@ -47,7 +46,7 @@ namespace tateti {
                     break;
                 } else {
                     if (!Tablero.tableroLleno (tab)) {
-                        Turno.cambiarTurno (jugadores, ref jugadorDeTurno);
+                        Turno.cambiaTurno (jugadores, ref jugadorDeTurno);
                     } else {
                         Mensajes.Resultado.Empate();
                         break;
